@@ -5,18 +5,18 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch 'src/**' --ext 'ts,json' --exec 'npm run build && npm run start'",
+    "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
-  "author": "Google LLC",
+  "author": "ujjwal katiyar",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0",
-    "typescript": "^5.4.5",
-    "@types/node": "^20.12.12"
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
   }
 }
