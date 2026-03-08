@@ -1,22 +1,22 @@
 {
-  "name": "node-express-api-ts",
-  "description": "Simple api sample in Node",
-  "version": "1.0.0",
+  "name": "wavelytics",
+  "module": "server.ts",
+  "type": "module",
   "private": true,
-  "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
-  "author": "ujjwal katiyar",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "express": "^4.21.2",
-    "tsx": "^4.21.0"
+    "dev": "tsx watch src/server.ts",
+    "start": "bun dist/server.js",
+    "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
-    "typescript": "^5.4.5"
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "tsx": "^4.21.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
